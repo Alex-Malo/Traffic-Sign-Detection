@@ -1,3 +1,4 @@
 # ignore data and few_shot directories
 /data/
 /few_shot/
+/videos/
