@@ -4,6 +4,22 @@ This project investigates the ability of the YOLOv8 object detection model to le
 
 ---
 
+## 📁 Project Structure
+
+| File/Folder                             | Description                                                                 |
+|----------------------------------------|-----------------------------------------------------------------------------|
+| `runs/detect/`                         | Output folder containing detection results from all models. |
+| `Term_Poster__Traffic_Sign_Detection.pdf` | Final project poster summarizing approach, experiments, and key results.   |
+| `data_preparation.ipynb`               | Preprocessing notebook for dataset formatting and annotation conversion.    |
+| `main.ipynb`                           | Main training pipeline and YOLOv8 model setup.                              |
+| `predicting_videos.ipynb`              | Inference notebook for running the model on video files.                    |
+| `error_analysis.ipynb`                 | Notebook for analyzing false positives, false negatives, and prediction accuracy. |
+| `yolov8n.pt`                           | Pre-Trained YOLOv8n model.                        |
+| `.gitignore`                           | Git ignore rules to exclude unnecessary files (logs, weights, etc.).       |
+| `README.md`                            | Project overview and instructions (this file).                              |
+
+---
+
 ##  Project Overview
 
 Traffic sign detection is a critical task in autonomous driving systems, requiring high-speed and high-accuracy recognition of small, fine-grained objects. Traditional models like Faster R-CNN or SSD perform well in accuracy but often fall short on real-time constraints. YOLOv8, the latest model in the YOLO family, is designed for real-time detection with competitive accuracy.
@@ -67,6 +83,12 @@ Plots in the repo include:
 - F1 Score and AP@0.50 evolution across dataset sizes
 - Confusion matrices and per-class confidence calibration
 - Visual inspection of predictions
+
+---
+
+## Reproducibility
+
+-  In order to reproduce our work you will need a gpu with at least 4gb of VRAM. Download the data set that we use from kaggle: https://www.kaggle.com/code/pkdarabi/traffic-signs-detection-using-yolov8/input?select=car. rename the car folder as "data" and use it directly in your cwd. Then just run the main.ipynb (full pipe line). the predicting_videos.ipynb can be used as a guide in order to classify new videos.
 
 ---
 
