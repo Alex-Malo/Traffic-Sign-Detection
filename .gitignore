@@ -1,5 +1,10 @@
 # ignore data and few_shot directories
-/data/
+# Ignore everything in /data/
+data/*
+
+# But not .yaml files
+!data/*.yaml
+
 /few_shot/
 /videos/
 /runs/detect/predict
